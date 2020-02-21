@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+    web:
+        build: ./flask_app
+        volumes:
+          - ./flask_app/src:/usr/src/app
+        ports:
+          - 8001:80    
